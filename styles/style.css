@@ -6,7 +6,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
-main section{
+main {
+    margin: 0 200px;
+}
+
+main section {
     margin-bottom: 130px;
 }
 
@@ -25,6 +29,7 @@ main section{
 header {
     background: rgba(255, 144, 14, 0.1);
 }
+
 /* Navigation */
 nav {
     display: grid;
@@ -51,7 +56,7 @@ nav {
     margin: 100px;
 }
 
-.banner-details {
+.banner-info {
     text-align: center;
     padding: 50px 80px;
 }
@@ -63,7 +68,7 @@ nav {
     margin: 0 120px;
 }
 
-.banner-info {
+.banner-details {
     font-weight: 400;
     font-size: 16px;
     color: #727272;
@@ -75,14 +80,14 @@ nav {
 }
 
 /* Teams Features  */
-.features {
+.features-quick-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 50px;
 
     justify-items: center;
     align-items: center;
-    padding: 0 80px;
+
 }
 
 .teams {
@@ -96,16 +101,88 @@ nav {
     width: 100%;
 }
 
-.features-title{
+.quick-list-title {
     margin-bottom: 20px;
     font-size: 45px;
 }
-.features-about {
+
+.quick-list-details {
     color: #727272;
     margin-bottom: 30px;
 }
 
-/* --- */
+
+
+/*------------ Experience Section--------- */
+/* .exp-container{
+
+} */
+/* about-exp */
+.about-exp {
+    display: flex;
+}
+
+.side-bar {
+    padding-top: 25px;
+    background: #FF900E;
+    width: 5px;
+    height: 106px;
+}
+
+.about-exp-title {
+    font-weight: 700;
+    font-size: 45px;
+
+    width: 468px;
+    height: 106px;
+}
+
+.about-exp-details {
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+
+    width: 586px;
+    height: 78px;
+    margin-top: 24px;
+}
+
+
+/* features-of-exp */
+.features-of-exp {
+    border: 1px solid red;
+}
+
+
+
+/* exp-img-container */
+
+.exp-img {
+    position: absolute;
+}
+
+/* 10+ year experience */
+.info {
+    position: absolute;
+    bottom: -20px;
+
+    color: #FFFFFF;
+    background: #FF900E;
+    border-radius: 8px;
+    width: 150px;
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    font-size: 40px;
+}
+
+.details {
+    font-size: 20px;
+}
+
 .hide {
     display: none;
+
 }
