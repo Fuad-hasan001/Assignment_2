@@ -1,0 +1,80 @@
+/* Google-fonts: Wroksans  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.Top-section {
+    border: 1px solid red;
+    height: auto;
+    background: rgba(255, 144, 14, 0.1);
+}
+
+.btn-primary {
+    font-weight: 600;
+    font-size: 20px;
+    height: 64px;
+    color: #FFFFFF;
+    background: #FF900E;
+    border: 0;
+    border-radius: 8px;
+    padding: 20px 24px;
+}
+
+/* ----------------------------------------------- */
+.Top-section section {
+    margin-top: 50px;
+}
+
+/* Navigation */
+nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.nav-details ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav-details li {
+    font-size: 18px;
+    list-style: none;
+    margin-left: 10px;
+}
+
+/* Banner section */
+.banner{
+    display: flex;
+    flex-direction: column;
+    margin: 100px ;
+    
+}
+.banner-details {
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.banner-title {
+    color: #131313;
+    font-weight: 700;
+    font-size: 64px;
+    margin: 0 120px;
+    
+}
+
+.banner-info {
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    margin-bottom: 32px;
+}
+
+.banner img {
+    width: 100%;
+    
+}
