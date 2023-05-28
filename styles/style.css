@@ -6,12 +6,8 @@
     font-family: 'Poppins', sans-serif;
 }
 
-main {
-    margin: 0 200px;
-}
-
-main section {
-    margin-bottom: 130px;
+header {
+    background: rgba(255, 144, 14, 0.1);
 }
 
 .btn-primary {
@@ -25,164 +21,92 @@ main section {
     padding: 20px 24px;
 }
 
-/* ----------------------------------------------- */
-header {
-    background: rgba(255, 144, 14, 0.1);
+.hide {
+    display: none;
 }
 
 /* Navigation */
 nav {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
+    display: flex;
     align-items: center;
+    justify-content: space-around;
+    padding-top: 2em;
+}
+
+.nav-title {
+    font-weight: 700;
+    font-size: 2em;
 }
 
 .nav-details ul {
+    color: #424242;
     display: flex;
-    align-items: center;
+    gap: 20px;
 }
 
-.nav-details li {
-    font-size: 18px;
+.nav-details ul li {
     list-style: none;
-    margin-left: 10px;
 }
 
-/* Banner section */
+.nav-details ul li>a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Banner */
 .banner {
     display: flex;
     flex-direction: column;
-    margin: 100px;
+    align-items: center;
+    padding: 2em 2em 5em 2em;
 }
 
 .banner-info {
     text-align: center;
-    padding: 50px 80px;
+    /* margin: 0 10em 2em 10em; */
+    padding: 0 10em 2em 10em;
 }
 
 .banner-title {
-    color: #131313;
     font-weight: 700;
     font-size: 64px;
-    margin: 0 120px;
 }
 
 .banner-details {
-    font-weight: 400;
     font-size: 16px;
     color: #727272;
-    margin-bottom: 32px;
+    margin: 10px 0;
 }
 
-.banner img {
-    width: 100%;
+.banner-img img {
+    max-width: 100%;
 }
-
-/* Teams Features  */
-.features-quick-list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 50px;
-
-    justify-items: center;
-    align-items: center;
-
-}
-
-.teams {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 15px;
-    grid-row-gap: 10px;
-}
-
-.team img {
-    width: 100%;
-}
-
-.quick-list-title {
-    margin-bottom: 20px;
-    font-size: 45px;
-}
-
-.quick-list-details {
-    color: #727272;
-    margin-bottom: 30px;
-}
+/* ------------Main----------- */
+/* Features Section */
 
 
 
-/*------------ Experience Section--------- */
-/* .exp-container{
-
-} */
-/* about-exp */
-.about-exp {
-    display: flex;
-}
-
-.side-bar {
-    padding-top: 25px;
-    background: #FF900E;
-    width: 5px;
-    height: 106px;
-}
-
-.about-exp-title {
-    font-weight: 700;
-    font-size: 45px;
-
-    width: 468px;
-    height: 106px;
-}
-
-.about-exp-details {
-    font-weight: 400;
-    font-size: 16px;
-    color: #727272;
-
-    width: 586px;
-    height: 78px;
-    margin-top: 24px;
-}
 
 
-/* features-of-exp */
-.features-of-exp {
-    border: 1px solid red;
-}
+/*------------- Responsive Section Media Query-------*/
+@media screen and (max-width: 576px) {
 
+    .navigation {
+        max-width: 100%;
+    }
 
+    nav,
+    .banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-/* exp-img-container */
+    .nav-details ul {
+        flex-direction: column;
+    }
 
-.exp-img {
-    position: absolute;
-}
-
-/* 10+ year experience */
-.info {
-    position: absolute;
-    bottom: -20px;
-
-    color: #FFFFFF;
-    background: #FF900E;
-    border-radius: 8px;
-    width: 150px;
-    text-align: center;
-    padding: 20px;
-}
-
-.title {
-    font-size: 40px;
-}
-
-.details {
-    font-size: 20px;
-}
-
-.hide {
-    display: none;
-
+    .banner-img {
+        margin: 0 8em;
+    }
 }
