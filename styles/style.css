@@ -21,10 +21,6 @@ header {
     padding: 20px 24px;
 }
 
-.hide {
-    display: none;
-}
-
 /* Navigation */
 nav {
     display: flex;
@@ -58,12 +54,10 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* padding: 2em 2em 5em 2em; */
 }
 
 .banner-info {
     text-align: center;
-    /* margin: 0 10em 2em 10em; */
     padding: 0 10em 2em 10em;
 }
 
@@ -77,22 +71,18 @@ nav {
     color: #727272;
     margin: 10px 0;
 }
-.banner-img{
+
+.banner-img {
     margin: 30px 80px;
 }
+
 .banner-img img {
     max-width: 100%;
 }
 
 /* ------------Main----------- */
 /* Features Section */
-.teams img {
-    max-width: 100%;
-}
-
 .features-quick-list {
-    border: 1px solid red;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,6 +95,10 @@ nav {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 10px;
     width: 25em;
+}
+
+.teams img {
+    max-width: 100%;
 }
 
 .quick-list-info {
@@ -126,9 +120,7 @@ nav {
 /* 10+ year Experience Section */
 
 .Experience {
-    border: 1px solid blue;
     margin: 130px;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -179,25 +171,18 @@ nav {
 }
 
 .features-img {
-    border: 1px solid goldenrod;
     width: 25em;
-
 }
 
-/* .images img {
-    max-width: 100%;
-} */
 .Experience img {
     max-width: 100%;
 }
 
 .images {
     width: 25em;
-
 }
 
 .box {
-    /* border: 1px solid red; */
     width: 8em;
     height: 5em;
     padding: 1em 1em;
@@ -210,7 +195,6 @@ nav {
     position: relative;
     bottom: 50px;
     right: 50px;
-
 }
 
 .box h3 {
@@ -226,7 +210,6 @@ nav {
 .facts {
     margin-top: 130px;
     margin: 130px 540px 0px 100px;
-
 }
 
 .facts h2 {
@@ -234,7 +217,6 @@ nav {
 }
 
 .facts p {
-
     font-weight: 400;
     color: #727272;
 }
@@ -248,7 +230,6 @@ nav {
 
 .success {
     width: 150px;
-    /* height: 110px; */
     text-align: center;
     padding: 10px 0;
     margin: 100px 0;
@@ -259,11 +240,24 @@ nav {
     animation-duration: 5s;
     animation-iteration-count: infinite;
 }
-@keyframes example{
-    0%   {background-color: rgba(255, 218, 185, 0.637);}
-  25%  {background-color: rgba(255, 192, 203, 0.671);}
-  50%  {background-color: rgba(255, 68, 0, 0.767) }
-  100% {background-color: lightskyblue}
+
+/* success box responsive section */
+@keyframes example {
+    0% {
+        background-color: rgba(255, 218, 185, 0.637);
+    }
+
+    25% {
+        background-color: rgba(255, 192, 203, 0.671);
+    }
+
+    50% {
+        background-color: rgba(255, 68, 0, 0.767)
+    }
+
+    100% {
+        background-color: lightskyblue
+    }
 }
 
 /* Sponsors */
@@ -282,33 +276,49 @@ nav {
 }
 
 /* ------------------footer----------- */
-footer .copyright{
+footer .copyright {
     background: #FFF4E7;
     border-radius: 8px;
     text-align: center;
     padding: 30px 0;
     margin: 130px 200px;
 }
-.contact{
+
+.contact {
     background-color: black;
     padding: 50px 0;
 }
-.contact-info{
+
+.contact-info {
     color: beige;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-.contact-info h3,h4,h5,img{
+
+.contact-info h3,
+h4,
+h5,
+img {
     padding: 1em;
 }
+
 /*------------- Responsive Section Media Query-------*/
 @media only screen and (max-width: 576px) {
 
-     nav,
+    .nav-details ul {
+        flex-direction: column;
+    }
+
+    .banner-img {
+        margin: 30px 150px;
+    }
+
+    nav,
     .banner,
     .features-quick-list,
-    .sponsors {
+    .sponsors,
+    .contact-info {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -318,35 +328,39 @@ footer .copyright{
     }
 
     .Experience {
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: flex-start;
+        margin: 80px;
     }
-    .Experience img{
+
+    .Experience img {
         max-width: 80%;
     }
 
-    .success-box,.company{
+    .success-box,
+    .company {
         display: flex;
         flex-wrap: wrap;
         column-gap: 20px;
         row-gap: 20px;
     }
-    .success{
+
+    .success {
         margin: 10px;
     }
-    .nav-details ul {
-        flex-direction: column;
-    }
-    .banner-img{
-        margin: 30px 150px;
-    }
-    .teams,.quick-list-info{
+
+    .teams,
+    .quick-list-info {
         width: 20em;
     }
+
     .sponsors-details,
-     footer .copyright,.facts{
+    footer .copyright,
+    .facts {
         margin: 2em;
     }
+
+    .contact {}
 }
